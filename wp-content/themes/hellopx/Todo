@@ -1,0 +1,2 @@
+# Compile sass
+ sass --source-map --watch sass/theme.scss:css/theme.min.css  --style=compressed
