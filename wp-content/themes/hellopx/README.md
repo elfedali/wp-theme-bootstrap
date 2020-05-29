@@ -13,6 +13,6 @@ Replace the Folders
 
 inc/
 global-templates/
-page-templates/
+templates/
 template-parts/
 

@@ -29,7 +29,7 @@ $container_html_class = get_theme_mod('hellopx_container_type');
 
 		<header id="masthead" class="site-header">
 
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 				<?php if ('container' === $container_html_class) : ?>
 					<div class="container">
 					<?php endif; ?>
