@@ -1,0 +1,21 @@
+{
+	"browserSyncOptions": {
+		"proxy": "localhost:10006/",
+		"port": 4000,
+		"notify": false,
+		"open": true
+	},
+	"browserSyncWatchFiles": ["./css/*.min.css", "./js/*.min.js", "./**/*.php"],
+	"paths": {
+		"js": "./js",
+		"css": "./css",
+		"img": "./img",
+		"imgsrc": "./src/img",
+		"sass": "./sass/**/*.scss",
+		"node": "./node_modules/",
+		"dev": "./src",
+		"dist": "./dist",
+		"distprod": "./dist-product",
+		"vendor": ""
+	}
+}

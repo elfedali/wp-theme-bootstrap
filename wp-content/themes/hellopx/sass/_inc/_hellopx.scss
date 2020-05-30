@@ -288,11 +288,18 @@ img {
 	.entry-description-small {
 		color: #FFF;
 	}
-	.btn{
+
+	.btn {
 		text-transform: uppercase;
 		font-size: 0.8rem;
 		padding: .5rem 1rem;
 	}
 
 
+}
+
+// .jumbotron
+.jumbotron {
+	border-radius: 0;
+	height: 360px;
 }
