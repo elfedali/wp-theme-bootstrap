@@ -91,12 +91,34 @@
 	max-width: 100%;
 }
 
+.widget {
+
+	.widget-title {
+		font-size: 1.2em;
+	}
+
+	.nav>li>a:focus,
+	.nav>li>a:hover {
+		background-color: $light;
+		text-decoration: none;
+	}
+}
+
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+
+#content.site-content {
+	padding-bottom: 3.75rem;
+	padding-top: 2.125rem; 
+	 
+}
+
+
 .sticky {
 	display: block;
 }

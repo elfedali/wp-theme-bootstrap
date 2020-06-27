@@ -60,6 +60,10 @@ $container_html_class = get_theme_mod('hellopx_container_type');
 					</div>
 				<?php endif; ?>
 			</nav>
+			<?php
+			// test
+			echo get_theme_mod('setting_google_fonts',false);
+			?>
 
 		</header><!-- #masthead -->
 

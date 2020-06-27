@@ -48,6 +48,7 @@ if ( ! function_exists( 'hellopx_setup' ) ) :
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'hellopx' ),
 			'footer' => esc_html__( 'Footer', 'hellopx' ),
+			'action' => esc_html__( 'Action', 'hellopx' ),
 		) );
 
 		/*
@@ -75,13 +76,13 @@ if ( ! function_exists( 'hellopx_setup' ) ) :
 		 * Enable support for Post Formats.
 		 * See http://codex.wordpress.org/Post_Formats
 		 */
-		/*add_theme_support( 'post-formats', array(
+		add_theme_support( 'post-formats', array(
 			'aside',
 			'image',
 			'video',
 			'quote',
 			'link',
-      ) );*/
+      ) );
       
 		/**
 		 * Add support for core custom logo.

@@ -14,6 +14,6 @@ endif;
 
 ?>
 
-<div class="col-md-3 widget-area" id="left-sidebar" role="complementary">
+<div class="col-md-4 widget-area" id="left-sidebar" role="complementary">
   <?php dynamic_sidebar('left-sidebar'); ?>
 </div>
