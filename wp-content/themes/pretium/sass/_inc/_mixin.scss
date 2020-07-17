@@ -1,0 +1,134 @@
+@mixin line-bellow($color) {
+   &:after {
+      content: '';
+      display: block;
+      width: 200px;
+      height: 2px;
+      background: $color;
+      margin-top: .8rem;
+   }
+}
+
+@mixin line-bellow($color, $width, $margin-top) {
+   &:after {
+      content: '';
+      display: block;
+      width: $width;
+      height: 2px;
+      background: $color;
+      margin: $margin-top;
+   }
+}
+
+/*Overlay slider */
+
+@mixin overlay-color($color, $opacity) {
+   position: relative;
+
+   &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: $color;
+      opacity: $opacity;
+      z-index: 2;
+   }
+
+   .take-over {
+      position: relative;
+      z-index: 22;
+   }
+}
+
+/*align center using flex box*/
+@mixin align-center {
+
+   display: flex;
+   align-items: center;
+}
+
+
+// Mixins
+// Bootstrap Button Variant
+@mixin button-variant($color, $background, $border) {
+   color: $color;
+   border-color: $border;
+   background-color: $background;
+
+   &.focus,
+   &:focus {
+      color: $color;
+      border-color: darken($border, 25%);
+      background-color: darken($background, 10%);
+   }
+
+   &:hover {
+      color: $color;
+      border-color: darken($border, 12%);
+      background-color: darken($background, 10%);
+   }
+
+   &.active,
+   &:active,
+   .open>&.dropdown-toggle {
+      color: $color;
+      border-color: darken($border, 12%);
+      background-color: darken($background, 10%);
+
+      &.focus,
+      &:focus,
+      &:hover {
+         color: $color;
+         border-color: darken($border, 25%);
+         background-color: darken($background, 17%);
+      }
+   }
+
+   &.active,
+   &:active,
+   .open>&.dropdown-toggle {
+      background-image: none;
+   }
+
+   &.disabled,
+   &[disabled],
+   fieldset[disabled] & {
+
+      &.focus,
+      &:focus,
+      &:hover {
+         border-color: $border;
+         background-color: $background;
+      }
+   }
+
+   .badge {
+      color: $background;
+      background-color: $color;
+   }
+}
+
+@mixin transition-all() {
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   transition: all 0.2s;
+}
+
+@mixin background-cover() {
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+@mixin serif-font() {
+   font-family: 'Lora','Times New Roman', serif;
+}
+
+@mixin sans-serif-font() {
+   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

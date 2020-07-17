@@ -1,0 +1,332 @@
+/*--------------------------------------------------------------
+	6.0 Content
+--------------------------------------------------------------*/
+.site-main {
+   margin-bottom: 40px;
+}
+
+.entry-title {
+   //text-transform: uppercase;
+   margin: 0;
+   font-size: 40px;
+   line-height: 53px;
+   -ms-word-wrap: break-word;
+   word-wrap: break-word;
+}
+
+.entry-title a {
+   color: #333333;
+
+   transition: all 0.1s ease-in-out;
+}
+
+.entry-title a:hover {
+   color: #ff0303;
+}
+
+.page-title {
+   font-family: "PT Sans Narrow", sans-serif;
+   text-transform: uppercase;
+   margin: 0;
+   font-size: 48px;
+   line-height: 53px;
+   -ms-word-wrap: break-word;
+   word-wrap: break-word;
+}
+
+.page-title a {
+   color: #333333;
+   -webkit-transition: all 0.1s ease-in-out;
+   -moz-transition: all 0.1s ease-in-out;
+   -ms-transition: all 0.1s ease-in-out;
+   -o-transition: all 0.1s ease-in-out;
+   transition: all 0.1s ease-in-out;
+}
+
+.page-title a:hover {
+   color: #ff0303;
+}
+
+.entry-header {
+   padding: 0 0 0 80px;
+   float: left;
+   width: 100%;
+   display: block;
+   position: relative;
+}
+
+.smr-post.has-post-thumbnail .entry-header {
+   position: absolute;
+   bottom: 0;
+   padding: 0 80px 38px 80px;
+   z-index: 10;
+}
+
+.smr-post.has-post-thumbnail .entry-header .entry-title,
+.smr-post.has-post-thumbnail .entry-header .entry-title a {
+   color: #FFF;
+}
+
+.post-thumbnail:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 50%;
+
+   background-image: linear-gradient(0deg, black, transparent);
+   opacity: 0.8;
+
+   transition: all 0.2s ease-in-out;
+}
+
+.format-image .post-thumbnail:after {
+   opacity: 0;
+   display: none;
+}
+
+.has-post-thumbnail .entry-header-wrapper:hover .post-thumbnail:after {
+   opacity: 1;
+
+   transition: all 0.2s ease-in-out;
+}
+
+.smr-nofimg .smr-post.has-post-thumbnail .entry-header,
+.smr-post.format-video .entry-header,
+.smr-post.format-gallery .entry-header,
+.smr-post.format-audio .entry-header,
+.smr-post.format-image .entry-header {
+   position: relative;
+   bottom: 0;
+   padding-bottom: 20px;
+}
+
+.smr-nofimg .smr-post.has-post-thumbnail .entry-header {
+   padding-bottom: 0;
+}
+
+.meta-media {
+   margin-bottom: 30px;
+   float: left;
+   width: 100%;
+}
+
+.entry-meta .meta-item {
+   float: left;
+   margin-right: 20px;
+}
+
+.entry-meta .meta-item,
+.entry-meta span,
+.entry-meta a {
+   color: rgba(51, 51, 51, 0.8);
+   font-size: .8rem;
+   line-height: 28px;
+   text-transform: uppercase;
+   @include sans-serif-font; 
+}
+
+.entry-meta a:hover {
+   color: #ff5050;
+}
+
+.entry-meta i {
+   margin-right: 7px;
+   font-size: 14px;
+}
+
+.entry-meta {
+   margin-top: 9px;
+}
+
+.has-post-thumbnail .entry-meta .meta-item,
+.has-post-thumbnail .entry-meta span,
+.has-post-thumbnail .entry-meta a {
+   color: rgba(255, 255, 255, .7); 
+}
+
+.post-thumbnail {
+   z-index: 1;
+   float: left;
+   width: 100%;
+   display: block;
+   position: relative;
+}
+
+.entry-header-wrapper {
+   margin-bottom: 20px;
+}
+
+.has-post-thumbnail .entry-header-wrapper {
+   margin-bottom: 30px;
+}
+
+.smr-nofimg .has-post-thumbnail .entry-header-wrapper {
+   margin-bottom: 0;
+}
+
+.format-video .entry-header-wrapper,
+.format-audio .entry-header-wrapper,
+.format-image .entry-header-wrapper,
+.format-gallery .entry-header-wrapper {
+   margin-bottom: 0;
+}
+
+.smr-post {
+   border-bottom: 1px solid #e2e2e2;
+   padding-bottom: 40px;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.smr-post:last-child {
+   border-bottom: none;
+   margin-bottom: 0;
+   padding-bottom: 0;
+}
+
+.smr-post-separator {
+   height: 1px;
+   width: 100%;
+   margin-top: 40px;
+   background: #e2e2e2;
+   clear: both;
+}
+
+.post-categories {
+   margin: 0 0 10px 0;
+   padding: 0;
+   display: inline-block;
+}
+
+.post-categories li {
+   display: inline-block;
+   list-style: none;
+   vertical-align: top;
+   margin: 0 3px 5px 0;
+}
+
+.post-categories a {
+   background: #fffbb7;
+   color: #333333;
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 30px;
+   display: inline-block;
+   border-radius: 20px;
+   padding: 0 16px;
+}
+
+.smr-format-action:hover,
+.post-categories a:hover {
+
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.smr-format-action {
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 30px;
+   display: inline-block;
+   border-radius: 20px;
+   padding: 0 16px;
+   margin-right: 5px;
+}
+
+.smr-format-action:before {
+   font-family: "FontAwesome";
+   margin-right: 7px;
+}
+
+.smr-format-action.video:before {
+   content: "\f04b";
+}
+
+.smr-format-action.gallery:before {
+   content: "\f03e";
+}
+
+.smr-format-action.audio:before {
+   content: "\f028";
+}
+
+.entry-header-wrapper {
+   float: left;
+   width: 100%;
+   display: block;
+   position: relative;
+}
+
+.entry-content p:last-child {
+   margin-bottom: 0;
+}
+
+.entry-content a:not(.more-link):not(.wp-block-button__link) {
+   color: #333333;
+
+   background: linear-gradient(to top, #ffffff 50%, #ff5050 50%);
+   background-repeat: repeat-x;
+   background-size: 2px 2px;
+   background-position: 0 100%;
+   text-shadow: 2px 0 #ffffff, 0px 2px #ffffff, -2px 0 #ffffff, 0 -2px #ffffff;
+}
+
+.entry-content a:not(.more-link):not(.wp-block-button__link):hover {
+   color: #ff5050;
+}
+
+.entry-content div>a:not(.wp-block-button__link) {
+   background: transparent !important;
+   text-shadow: none !important;
+}
+
+.more-link {
+
+   transition: all 0.1s ease-in-out;
+   padding: 5px 16px;
+   height: 41px;
+   border: 1px solid;
+   display: inline-block;
+   border-radius: 40px;
+   clear: both;
+   background: transparent;
+   text-transform: uppercase;
+   font-size: 16px;
+   line-height: 28px;
+}
+
+.more-link:before {
+   content: "\f138";
+   font-family: "FontAwesome";
+   margin-right: 7px;
+}
+
+.archive-head {
+   margin-bottom: 20px;
+}
+
+.archive-head h1 {
+   font-family: "PT Sans Narrow", sans-serif;
+   font-size: 22px;
+   text-transform: uppercase;
+   line-height: 32px;
+   margin-top: -8px;
+   margin-bottom: 0;
+}
+
+.archive-head p {
+   font-size: 16px;
+   line-height: 22px;
+   color: #333333;
+   margin-bottom: 0;
+}
+
+.meta-media-popup {
+   display: none;
+}
+
+.smr-popup-content {
+   max-width: 720px;
+   margin: 0 auto;
+}

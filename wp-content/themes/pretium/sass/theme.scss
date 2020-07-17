@@ -1,0 +1,21 @@
+$fa-font-path:        "../webfonts";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import '_inc/variables';
+@import "_inc/mixin";
+
+/*plugin*/
+@import '_inc/bootstrap';
+
+
+/*blocks*/
+@import './_inc/block/masthead';
+@import './_inc/block/global';
+@import './_inc/block/content';
+/**/
+@import '_inc/pretium';
+@import '_inc/theme';
+
