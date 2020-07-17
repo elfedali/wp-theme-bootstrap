@@ -46,6 +46,7 @@ wp-content/plugins/*
 wp-content/themes/*
 !wp-content/themes/hellopx/
 wp-content/themes/hellopx/work/*
+!wp-content/themes/pretium
 
 
 #
